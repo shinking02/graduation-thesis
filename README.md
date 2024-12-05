@@ -29,4 +29,7 @@ npm install # 初回のみ
 npm run lint
 ```
 
+## 参考にさせていただいたサイト
 
+- https://zenn.dev/lirais/articles/6b28a6b1c3e918
+- https://zenn.dev/junyaokabe/articles/latex-environment
