@@ -18,7 +18,7 @@ mainブランチの更新があるとPDFがBoxに自動アップロードされ�
 
 ## 文章校正
 
-TextLintによる文章校正が利用可能です。
+TextLintによる文章校正が利用可能です。  
 また、latexindentとlatexworkshopにより保存時に自動的にLaTeXのフォーマットが整えられます。
 
 ### ローカルでの実行
