@@ -1,13 +1,32 @@
-# latex-devcontainer-termpaper
+# graduation-thesis
 
-DevContainer でタームペーパーを執筆するためのテンプレートです。
+卒業論文用のレポジトリです。
 
-Docker と VSCode さえあれば、ローカルに TexLive を入れずに編集することができます。
 
-## Usage
+## セットアップ
 
-1. 右上の "Use This Template" から、このリポジトリを自分のアカウントに複製する
-2. VSCode に `Dev Container` 拡張機能を導入する
-3. VSCode でリポジトリを開き、左下の `> <` アイコンをクリックして `Reopen in Container` を選択
-4. `main.tex` を編集し保存すると、自動で `main.pdf` が生成される
-5. 参考文献はBibTeXを利用して `cites.bib` に、画像は `img` ディレクトリに入れて適宜 `main.tex` からリンクする
+1. VSCodeとDocker Desktopをインストール
+2. VSCodeに[Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)拡張機能をインストール
+3. このリポジトリをクローン
+4. VSCodeでフォルダを開き、「Reopen in Container」を選択
+
+これにより、LaTeX執筆に必要な環境が自動的に構築されます。
+
+## Boxへの自動アップリロード
+
+mainブランチの更新があるとPDFがBoxに自動アップロードされます。
+
+## 文章校正
+
+TextLintによる文章校正が利用可能です。
+
+### ローカルでの実行
+
+下記コマンドでローカルで文章校正が実行できます。
+
+```bash
+npm install # 初回のみ
+npm run lint
+```
+
+
