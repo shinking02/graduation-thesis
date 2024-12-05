@@ -1,0 +1,90 @@
+\documentclass[uplatex,a4j,twocolumn]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{ascmac}
+\usepackage{url}
+\usepackage[dvipdfmx]{color}
+\usepackage{enumerate}
+
+% ．
+% ，
+
+
+\makeatletter
+\def\section{\@startsection{section}{1}{\z@}{2ex plus .2ex minus .2ex}%
+			{.5ex plus .2ex minus .2ex}{\large\bfseries}}
+\def\thesection{\arabic{section}.}
+\def\subsection{\@startsection{subsection}{1}{\z@}{.7ex plus .2ex minus .2ex}%
+			{.5ex plus .2ex minus .2ex}{\normalsize\bfseries}}
+\def\thesubsection{\arabic{section}.\arabic{subsection}}
+\def\thefootnote{\fnsymbol{footnote}}
+\def\todo{\textcolor{red}{****|TODO|****}}
+\makeatother
+
+
+\def\baselinestretch{0.8}
+
+\setlength{\textheight}{23.5cm}%297-30-27 - 5
+\setlength{\textwidth}{17.4cm}%210-18-18 - 10
+%\setlength{\headheight}{0.0in}
+\setlength{\headsep}{0.0in}
+\setlength{\oddsidemargin}{-.9cm}%+3
+\setlength{\evensidemargin}{-.9cm}%+3
+\setlength{\columnsep}{7mm}
+
+
+
+
+% local settings
+
+% end of local settings
+
+
+\begin{document}
+\pagestyle{plain}
+
+\twocolumn[%
+\begin{center}
+ {\Large タイトル}\vspace{.5ex}
+
+ {\Large\sffamily }\vspace{1ex}
+
+
+
+\large
+\mbox{}
+\hfil
+\setcounter{footnote}{2}
+{\bfseries Sociable Robots 名前}${}^\thefootnote$
+\hfil
+\setcounter{footnote}{2}
+{\bfseries 親：名前}
+\hfil
+\mbox{}
+
+\mbox{}
+\hfil
+{\sffamily}
+\hfil
+{\sffamily}
+\hfil
+\mbox{}
+\hfil
+
+\end{center}
+]
+
+\setcounter{footnote}{2}
+\footnotetext{慶應義塾大学　環境情報学部}
+
+
+\textbf{概要}
+
+    
+
+
+\section{背景}
+
+\bibliographystyle{junsrt}
+\bibliography{cites.bib}
+
+\end{document}
