@@ -1,0 +1,13 @@
+{
+"[latex]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
+  },
+  "latex-workshop.formatting.latex": "latexindent",
+  "latex-workshop.formatting.latexindent.path": "/usr/local/bin/texlive/latexindent",
+  "latex-workshop.formatting.latexindent.args": [
+        "%TMPFILE%",
+        "-c=%DIR%/",
+        "-y=defaultIndent: '%INDENT%'"
+  ]
+}

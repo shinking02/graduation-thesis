@@ -1,90 +1,73 @@
-\documentclass[uplatex,a4j,twocolumn]{jsarticle}
+\documentclass[uplatex,a4j,10pt,titlepage]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{ascmac}
+\usepackage{amsmath}
 \usepackage{url}
-\usepackage[dvipdfmx]{color}
-\usepackage{enumerate}
 
-% ．
-% ，
+\title {
+	香川県高松市の交通需要の均一化を目的とした駐車場利用率の予測と可視化に関する研究
+}
+\author {
+	東京電機大学 システムデザイン工学部  情報システム工学科\\
+	21AJ039 \\
+	\\
+	川上 真
+}
 
-
-\makeatletter
-\def\section{\@startsection{section}{1}{\z@}{2ex plus .2ex minus .2ex}%
-			{.5ex plus .2ex minus .2ex}{\large\bfseries}}
-\def\thesection{\arabic{section}.}
-\def\subsection{\@startsection{subsection}{1}{\z@}{.7ex plus .2ex minus .2ex}%
-			{.5ex plus .2ex minus .2ex}{\normalsize\bfseries}}
-\def\thesubsection{\arabic{section}.\arabic{subsection}}
-\def\thefootnote{\fnsymbol{footnote}}
-\def\todo{\textcolor{red}{****|TODO|****}}
-\makeatother
-
-
-\def\baselinestretch{0.8}
-
-\setlength{\textheight}{23.5cm}%297-30-27 - 5
-\setlength{\textwidth}{17.4cm}%210-18-18 - 10
-%\setlength{\headheight}{0.0in}
-\setlength{\headsep}{0.0in}
-\setlength{\oddsidemargin}{-.9cm}%+3
-\setlength{\evensidemargin}{-.9cm}%+3
-\setlength{\columnsep}{7mm}
-
-
-
-
-% local settings
-
-% end of local settings
-
+\date{\today}
 
 \begin{document}
-\pagestyle{plain}
 
-\twocolumn[%
-\begin{center}
- {\Large タイトル}\vspace{.5ex}
+\maketitle
 
- {\Large\sffamily }\vspace{1ex}
+\tableofcontents
 
+\section*{概要}
+\addcontentsline{toc}{section}{概要}
 
+\section{序論}
+\subsection{研究背景}
+\subsection{研究目的}
 
-\large
-\mbox{}
-\hfil
-\setcounter{footnote}{2}
-{\bfseries Sociable Robots 名前}${}^\thefootnote$
-\hfil
-\setcounter{footnote}{2}
-{\bfseries 親：名前}
-\hfil
-\mbox{}
+\section{関連研究}
+\subsection{交通需要とその課題}
+\subsection{駐車場管理における既存のシステム}
+\subsection{時系列モデルの適用事例}
+\subsection{本研究の新規性}
 
-\mbox{}
-\hfil
-{\sffamily}
-\hfil
-{\sffamily}
-\hfil
-\mbox{}
-\hfil
+\section{提案システム}
+\subsection{システム概要}
+\subsection{提案システムの機能}
+\subsubsection{リアルタイムデータ収集}
+\subsubsection{ダッシュボードを用いた利用率の可視化}
+\subsubsection{SARIMAXモデルを用いた予測}
 
-\end{center}
-]
+\section{実験}
+\subsection{実験概要}
+\subsection{評価方法とアンケート設計}
 
-\setcounter{footnote}{2}
-\footnotetext{慶應義塾大学　環境情報学部}
+\section{結果}
+\subsection{データの分析結果}
+\subsubsection{利用率データの可視化}
+\subsubsection{SARIMAXモデルによる予測精度}
+\subsection{アンケート結果の分析}
+\subsubsection{交通需要均一化への意識}
+\subsubsection{市職員からの意見}
 
+\section{考察}
+\subsection{提案システムの有効性に関する考察}
+\subsection{今後の研究課題}
 
-\textbf{概要}
+\section{結論}
 
-    
+\section*{参考文献}
+\addcontentsline{toc}{section}{参考文献}
+\begin{enumerate}
+	\item 文献1
+	\item 文献2
+	\item 文献3
+\end{enumerate}
 
-
-\section{背景}
-
-\bibliographystyle{junsrt}
-\bibliography{cites.bib}
+\section*{謝辞}
+\addcontentsline{toc}{section}{謝辞}
 
 \end{document}
