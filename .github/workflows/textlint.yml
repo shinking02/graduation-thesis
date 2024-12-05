@@ -32,12 +32,7 @@ jobs:
 
       - name: Execute textlint
         run: |
-          npx textlint -f checkstyle **/*.tex > textlint.log
-          if [ -s textlint.log ]; then
-            cat textlint.log | reviewdog -f=checkstyle -name="textlint" -reporter="github-pr-review"
-            exit 1
-          else
-            cat textlint.log | reviewdog -f=checkstyle -name="textlint" -reporter="github-pr-review"
-          fi
+          npx textlint -f checkstyle **/*.tex | reviewdog -f=checkstyle -name="textlint" -reporter="github-pr-review"
+          npx textlint **/*.tex || exit 1
         env:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
