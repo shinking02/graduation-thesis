@@ -27,5 +27,6 @@
         ]
       }
     }
-  }
+  },
+  "runArgs": ["--name=latex-env"]
 }
